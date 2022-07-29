@@ -4,11 +4,9 @@ def is_palindrome(given_string):
         Arguments:
         given_string
     """
+    given_string = given_string.lower()
     reverse_string = given_string[::-1]
-    if reverse_string.lower() == given_string.lower():
-        return True
-    else:
-        return False
+    return reverse_string == given_string
 
 check_string = 'Kajak'
 print(is_palindrome(check_string))
